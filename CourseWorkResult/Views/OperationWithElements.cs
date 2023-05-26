@@ -1,6 +1,6 @@
 ﻿using CourseWorkResult.Controllers;
+using CourseWorkResult.Controllers.Validation;
 using CourseWorkResult.Models;
-using CourseWorkResult.Validation;
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
