@@ -1,4 +1,4 @@
-﻿using CourseWorkResult.Validation.ClientValidation;
+﻿using CourseWorkResult.Controllers.Validation.ClientValidation;
 using CourseWorkResult.Json;
 using CourseWorkResult.Models;
 using System;

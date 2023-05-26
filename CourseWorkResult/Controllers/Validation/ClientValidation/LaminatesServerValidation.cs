@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Net;
 
-namespace CourseWorkResult.Validation.ClientValidation
+namespace CourseWorkResult.Controllers.Validation.ClientValidation
 {
     class LaminatesServerValidation : ILaminatesServerValidation
     {

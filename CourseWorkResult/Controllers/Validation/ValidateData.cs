@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace CourseWorkResult.Validation
+namespace CourseWorkResult.Controllers.Validation
 {
     static class ValidateData
     {

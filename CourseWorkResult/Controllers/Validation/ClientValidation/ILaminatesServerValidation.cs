@@ -1,4 +1,4 @@
-﻿namespace CourseWorkResult.Validation.ClientValidation
+﻿namespace CourseWorkResult.Controllers.Validation.ClientValidation
 {
     interface ILaminatesServerValidation
     {

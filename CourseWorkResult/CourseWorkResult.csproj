@@ -65,9 +65,9 @@
     <Compile Include="Models\Request.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Validation\ClientValidation\ILaminatesServerValidation.cs" />
-    <Compile Include="Validation\ClientValidation\LaminatesServerValidation.cs" />
-    <Compile Include="Validation\ValidateData.cs" />
+    <Compile Include="Controllers\Validation\ClientValidation\ILaminatesServerValidation.cs" />
+    <Compile Include="Controllers\Validation\ClientValidation\LaminatesServerValidation.cs" />
+    <Compile Include="Controllers\Validation\ValidateData.cs" />
     <Compile Include="Views\LaminateCalculation.cs">
       <SubType>Form</SubType>
     </Compile>
