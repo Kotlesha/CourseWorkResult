@@ -17,7 +17,7 @@ namespace CourseWorkResult.Validation
 
         public Client(string ipAddress, int port)
         {
-            LaminatesServerValidation laminatesServerValidation = new LaminatesServerValidation();
+            LaminatesClientValidation laminatesServerValidation = new LaminatesClientValidation();
             Console.ForegroundColor = ConsoleColor.Red;
 
             if (!laminatesServerValidation.CheckIpAddress(ipAddress))

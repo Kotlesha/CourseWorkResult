@@ -1,6 +1,6 @@
 ﻿namespace CourseWorkResult.Controllers.Validation.ClientValidation
 {
-    interface ILaminatesServerValidation
+    interface ILaminatesClientValidation
     {
         bool CheckIpAddress(string ipAddress);
         bool CheckPort(int port);

@@ -3,7 +3,7 @@ using System.Net;
 
 namespace CourseWorkResult.Controllers.Validation.ClientValidation
 {
-    class LaminatesServerValidation : ILaminatesServerValidation
+    class LaminatesClientValidation : ILaminatesClientValidation
     {
         public bool CheckIpAddress(string ipAddress) =>
             ipAddress != null && ipAddress.Count(c => c == '.') == 3 && 

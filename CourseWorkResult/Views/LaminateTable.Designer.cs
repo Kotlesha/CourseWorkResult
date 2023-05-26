@@ -38,9 +38,9 @@ namespace CourseWorkResult.Views
             this.Search = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.Table = new System.Windows.Forms.DataGridView();
             this.Choose = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Table)).BeginInit();
@@ -112,6 +112,15 @@ namespace CourseWorkResult.Views
             this.panel2.Size = new System.Drawing.Size(809, 443);
             this.panel2.TabIndex = 6;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(233, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(152, 15);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "Поиск по производителю:";
+            // 
             // Table
             // 
             this.Table.AllowUserToAddRows = false;
@@ -131,7 +140,7 @@ namespace CourseWorkResult.Views
             this.Table.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.Table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Bisque;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
@@ -159,15 +168,6 @@ namespace CourseWorkResult.Views
             this.Choose.Text = "Выбрать";
             this.Choose.UseVisualStyleBackColor = true;
             this.Choose.Click += new System.EventHandler(this.Choose_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(233, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(152, 15);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Поиск по производителю:";
             // 
             // LaminateTable
             // 

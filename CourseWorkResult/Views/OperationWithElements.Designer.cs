@@ -143,9 +143,9 @@ namespace CourseWorkResult.Views
             this.label3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(16, 215);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 17);
+            this.label3.Size = new System.Drawing.Size(129, 17);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Цена";
+            this.label3.Text = "Цена за упаковку";
             // 
             // label2
             // 
@@ -252,6 +252,7 @@ namespace CourseWorkResult.Views
             // manufacture
             // 
             this.manufacture.Location = new System.Drawing.Point(16, 97);
+            this.manufacture.MaxLength = 20;
             this.manufacture.Multiline = true;
             this.manufacture.Name = "manufacture";
             this.manufacture.Size = new System.Drawing.Size(276, 23);
@@ -260,6 +261,7 @@ namespace CourseWorkResult.Views
             // name
             // 
             this.name.Location = new System.Drawing.Point(16, 51);
+            this.name.MaxLength = 20;
             this.name.Multiline = true;
             this.name.Name = "name";
             this.name.Size = new System.Drawing.Size(276, 23);
