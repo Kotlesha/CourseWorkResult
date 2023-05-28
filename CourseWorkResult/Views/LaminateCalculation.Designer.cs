@@ -515,7 +515,7 @@ namespace CourseWorkResult.Views
             this.leftoverSquare.Name = "leftoverSquare";
             this.leftoverSquare.Size = new System.Drawing.Size(100, 17);
             this.leftoverSquare.TabIndex = 8;
-            this.leftoverSquare.Text = "0 м2";
+            this.leftoverSquare.Text = "0,0 м2";
             // 
             // label15
             // 

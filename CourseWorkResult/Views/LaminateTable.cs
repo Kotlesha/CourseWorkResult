@@ -95,7 +95,7 @@ namespace CourseWorkResult.Views
         private void Search_TextChanged(object sender, EventArgs e)
         {
             var data = Table.DataSource as BindingListView<Laminate>;
-            data.ApplyFilter(delegate (Laminate laminate) { return laminate.Manufacture.ToLower().Contains(Search.Text.Trim().ToLower()); });
+            data.ApplyFilter(laminate => laminate.Manufacture.ToLower().Contains(Search.Text.Trim().ToLower()));
             Table_DataSourceChanged(sender, e);
         }
 

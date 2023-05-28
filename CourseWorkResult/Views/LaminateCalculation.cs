@@ -2,6 +2,7 @@
 using CourseWorkResult.Models;
 using Spire.Doc;
 using System;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CourseWorkResult.Views
@@ -69,8 +70,7 @@ namespace CourseWorkResult.Views
 
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                string filename = saveFileDialog1.FileName;
-                document.SaveToFile(filename, FileFormat.Docx);
+                document.SaveToFile(saveFileDialog1.FileName, FileFormat.Docx);
             }
         }
     }
