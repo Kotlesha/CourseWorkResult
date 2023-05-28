@@ -7,7 +7,7 @@ namespace CourseWorkResult.Controllers
     {
         public static CalculationResult Calculate(CalculationData data)
         {
-            decimal Square, LeftoverSquare;
+            decimal Square, LeftoverSquare = 0.0m;
             int Amount = 0, CountOfPackages, ResultPrice, Leftover = 0;
             int length = (int)Math.Round(data.LengthRoom * 1000 - 2 * data.Indent, MidpointRounding.AwayFromZero);
             int width = (int)Math.Round(data.WidthRoom * 1000 - 2 * data.Indent, MidpointRounding.AwayFromZero);
@@ -17,7 +17,7 @@ namespace CourseWorkResult.Controllers
             {
                 while (j < length)
                 {
-                    if (j == 0 && temp >= data.MinLength && data.MinLength != 0)
+                    if (j == 0 && temp > data.MinLength)
                     {
                         j += temp;
                         temp = 0;
@@ -43,6 +43,8 @@ namespace CourseWorkResult.Controllers
                         if (temp < data.MinLength)
                         {
                             Leftover++;
+                            LeftoverSquare += temp * data.Laminate.Width / 1000000.0m;
+                            temp = 0;
                         }
                     }
                     else
@@ -58,7 +60,6 @@ namespace CourseWorkResult.Controllers
             }
 
             Square = Amount * data.Laminate.Length * data.Laminate.Width / 1000000.0m;
-            LeftoverSquare = Leftover * data.Laminate.Length * data.Laminate.Width / 1000000.0m;
             CountOfPackages = (int)Math.Ceiling(Amount * 1.0d / data.Laminate.Amount);
             ResultPrice = data.Laminate.Price * CountOfPackages;
             return new CalculationResult(Square, Amount, CountOfPackages, ResultPrice, Leftover, LeftoverSquare);

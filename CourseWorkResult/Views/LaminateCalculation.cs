@@ -25,6 +25,11 @@ namespace CourseWorkResult.Views
 
         private void Count_Click(object sender, EventArgs e)
         {
+            if (minLength.Value > (int)Math.Round(lengthLaminate.Value / 2, MidpointRounding.AwayFromZero))
+            {
+                minLength.Value = Math.Round(lengthLaminate.Value / 2, MidpointRounding.AwayFromZero);
+            }
+
             CalculationData calculationData = new CalculationData(Laminate, lengthRoom.Value, widthRoom.Value, (int)indent.Value, (int)minLength.Value);
             CalculationResult calculationResult = Calculation.Calculate(calculationData);
             CalculationData = calculationData;
@@ -45,13 +50,19 @@ namespace CourseWorkResult.Views
             var section = document.AddSection();
             var header = section.HeadersFooters.Header;
             var headerParagraph = header.AddParagraph();
-            var headerText = headerParagraph.AppendText("Результаты расчёта калькулятора ламината:");
+            headerParagraph.Format.HorizontalAlignment = Spire.Doc.Documents.HorizontalAlignment.Center;
+            var headerText = headerParagraph.AppendText("Калькулятор ламината\n");
+            headerText.CharacterFormat.FontName = "Times New Roman";
+            headerText.CharacterFormat.FontSize = 12;
+            headerText.CharacterFormat.Bold = true;
+            headerText = headerParagraph.AppendText("Результаты расчёта:");
             headerText.CharacterFormat.FontName = "Times New Roman";
             headerText.CharacterFormat.FontSize = 15;
             var paragraph = section.AddParagraph();
-            paragraph.AppendText(string.Concat(CalculationData.ToString(), CalculationResult.ToString()));
+            var textRange = paragraph.AppendText(string.Concat(CalculationData.ToString(), CalculationResult.ToString()));
+            textRange.CharacterFormat.FontSize = 14;
             paragraph.Format.HorizontalAlignment = Spire.Doc.Documents.HorizontalAlignment.Left;
-
+            
             saveFileDialog1.Filter = "Word Document|*.docx";
             saveFileDialog1.FileName = "Отчёт.docx";
             saveFileDialog1.Title = "Сохранение отчёта";

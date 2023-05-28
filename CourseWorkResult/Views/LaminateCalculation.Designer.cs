@@ -48,45 +48,45 @@ namespace CourseWorkResult.Views
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel9 = new System.Windows.Forms.Panel();
             this.panel24 = new System.Windows.Forms.Panel();
             this.panel25 = new System.Windows.Forms.Panel();
             this.leftoverSquare = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.panel26 = new System.Windows.Forms.Panel();
             this.panel10 = new System.Windows.Forms.Panel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.Square = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
             this.Amount = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel19 = new System.Windows.Forms.Panel();
             this.CountOfPackages = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.panel20 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel14 = new System.Windows.Forms.Panel();
             this.ResultPrice = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel21 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.panel15 = new System.Windows.Forms.Panel();
             this.Leftover = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.panel21 = new System.Windows.Forms.Panel();
             this.panel22 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.price)).BeginInit();
@@ -280,6 +280,11 @@ namespace CourseWorkResult.Views
             // minLength
             // 
             this.minLength.Location = new System.Drawing.Point(19, 206);
+            this.minLength.Maximum = new decimal(new int[] {
+            9999999,
+            0,
+            0,
+            0});
             this.minLength.Name = "minLength";
             this.minLength.Size = new System.Drawing.Size(249, 23);
             this.minLength.TabIndex = 21;
@@ -406,6 +411,15 @@ namespace CourseWorkResult.Views
             this.label5.Text = "Размеры ламината";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
+            this.panel4.BackgroundImage = global::CourseWorkResult.Properties.Resources.floor__1_;
+            this.panel4.Location = new System.Drawing.Point(19, 314);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(33, 33);
+            this.panel4.TabIndex = 8;
+            // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold);
@@ -442,6 +456,14 @@ namespace CourseWorkResult.Views
             this.label1.TabIndex = 1;
             this.label1.Text = "Размеры помещения";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.Location = new System.Drawing.Point(19, 19);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(33, 33);
+            this.panel3.TabIndex = 0;
             // 
             // panel8
             // 
@@ -506,6 +528,14 @@ namespace CourseWorkResult.Views
             this.label15.Text = "Площадь остатков";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel26
+            // 
+            this.panel26.BackgroundImage = global::CourseWorkResult.Properties.Resources._3700406_drawing_geometry_measure_measuring_rulers_set_square_108770;
+            this.panel26.Location = new System.Drawing.Point(14, 12);
+            this.panel26.Name = "panel26";
+            this.panel26.Size = new System.Drawing.Size(50, 50);
+            this.panel26.TabIndex = 7;
+            // 
             // panel10
             // 
             this.panel10.BackColor = System.Drawing.Color.Sienna;
@@ -544,6 +574,14 @@ namespace CourseWorkResult.Views
             this.label9.TabIndex = 4;
             this.label9.Text = "Площадь";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel17
+            // 
+            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
+            this.panel17.Location = new System.Drawing.Point(14, 14);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(50, 50);
+            this.panel17.TabIndex = 4;
             // 
             // panel7
             // 
@@ -584,6 +622,14 @@ namespace CourseWorkResult.Views
             this.label12.Text = "Панелей";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel18
+            // 
+            this.panel18.BackgroundImage = global::CourseWorkResult.Properties.Resources.dashboard_icon_153403;
+            this.panel18.Location = new System.Drawing.Point(14, 12);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(50, 50);
+            this.panel18.TabIndex = 7;
+            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.Sienna;
@@ -622,6 +668,14 @@ namespace CourseWorkResult.Views
             this.label14.TabIndex = 6;
             this.label14.Text = "Упаковок";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // panel20
+            // 
+            this.panel20.BackgroundImage = global::CourseWorkResult.Properties.Resources.package_box_packaging_fragile_ecommerce_icon_227804;
+            this.panel20.Location = new System.Drawing.Point(14, 12);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(50, 50);
+            this.panel20.TabIndex = 7;
             // 
             // panel5
             // 
@@ -662,6 +716,14 @@ namespace CourseWorkResult.Views
             this.label16.Text = "Цена";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
+            // panel21
+            // 
+            this.panel21.BackgroundImage = global::CourseWorkResult.Properties.Resources.savecostbudgetvaluepricecut_109773;
+            this.panel21.Location = new System.Drawing.Point(14, 12);
+            this.panel21.Name = "panel21";
+            this.panel21.Size = new System.Drawing.Size(50, 50);
+            this.panel21.TabIndex = 7;
+            // 
             // panel12
             // 
             this.panel12.BackColor = System.Drawing.Color.Sienna;
@@ -701,46 +763,6 @@ namespace CourseWorkResult.Views
             this.label18.Text = "Остатки";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // panel26
-            // 
-            this.panel26.BackgroundImage = global::CourseWorkResult.Properties.Resources._3700406_drawing_geometry_measure_measuring_rulers_set_square_108770;
-            this.panel26.Location = new System.Drawing.Point(14, 12);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(50, 50);
-            this.panel26.TabIndex = 7;
-            // 
-            // panel17
-            // 
-            this.panel17.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel17.BackgroundImage")));
-            this.panel17.Location = new System.Drawing.Point(14, 14);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(50, 50);
-            this.panel17.TabIndex = 4;
-            // 
-            // panel18
-            // 
-            this.panel18.BackgroundImage = global::CourseWorkResult.Properties.Resources.dashboard_icon_153403;
-            this.panel18.Location = new System.Drawing.Point(14, 12);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(50, 50);
-            this.panel18.TabIndex = 7;
-            // 
-            // panel20
-            // 
-            this.panel20.BackgroundImage = global::CourseWorkResult.Properties.Resources.package_box_packaging_fragile_ecommerce_icon_227804;
-            this.panel20.Location = new System.Drawing.Point(14, 12);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(50, 50);
-            this.panel20.TabIndex = 7;
-            // 
-            // panel21
-            // 
-            this.panel21.BackgroundImage = global::CourseWorkResult.Properties.Resources.savecostbudgetvaluepricecut_109773;
-            this.panel21.Location = new System.Drawing.Point(14, 12);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(50, 50);
-            this.panel21.TabIndex = 7;
-            // 
             // panel22
             // 
             this.panel22.BackgroundImage = global::CourseWorkResult.Properties.Resources.trash_can_38501;
@@ -748,23 +770,6 @@ namespace CourseWorkResult.Views
             this.panel22.Name = "panel22";
             this.panel22.Size = new System.Drawing.Size(50, 50);
             this.panel22.TabIndex = 7;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Transparent;
-            this.panel4.BackgroundImage = global::CourseWorkResult.Properties.Resources.floor__1_;
-            this.panel4.Location = new System.Drawing.Point(19, 314);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(33, 33);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.Location = new System.Drawing.Point(19, 19);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(33, 33);
-            this.panel3.TabIndex = 0;
             // 
             // LaminateCalculation
             // 
